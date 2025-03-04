@@ -1,0 +1,12 @@
+.msg {
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+  }
+  .msg h3 {
+    margin: 0 0 10px 0;
+  }
+  .msg span {
+    font-size: 0.9rem;
+  }
+  

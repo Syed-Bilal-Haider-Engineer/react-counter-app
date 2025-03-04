@@ -1,0 +1,26 @@
+.Toastify__toast--success {
+  border-left: 2px solid #66d9a8;
+  height: 120px !important;
+  width: 400px !important;
+  border-radius: 8px;
+  padding: 12px 20px 12px 16px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px !important;
+  background: radial-gradient(
+      53.57% 282.15% at 2.14% 50%,
+      rgba(116, 200, 152, 0.15) 0%,
+      rgba(116, 200, 152, 0.03) 100%
+    ),
+    #46474f !important;
+}
+.Toastify__toast-icon {
+  width: 40px !important;
+}
+
+.react-icons {
+  font-size: 40px !important;
+  font-weight: bolder;
+  color: #00c000;
+}
