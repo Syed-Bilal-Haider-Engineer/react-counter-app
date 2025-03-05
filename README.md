@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# 🚀 React TypeScript Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This is a simple **React** application built with **TypeScript**. The app demonstrates key concepts like:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A **Counter component** with a button to increment the counter.
+- **Global state management** using React's Context API (`CounterContext` and `CounterProvider`).
+- A **custom hook** (`useCounter()`) to interact with the counter's value.
+- *Toast notifications** using **Chakra UI** or any toast notification library you prefer, to show real-time updates whenever the counter is incremented.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Incremental Counter**: A button (`+1`) that increases the count by 1 each time it's clicked.
+- **Global State**: Implements a global `CounterContext` and `CounterProvider` to manage state.
+- **Custom Hook**: Exposes the current count and an increment function via `useCounter()`.
+- **Toast Notifications**: Displays a toast with the updated count.
+- **TypeScript Support**: Ensures type safety throughout the app.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can follow these steps to set up the project on your local machine.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Ensure you have the following installed:
+
+- **Node.js** (LTS version recommended)
+- **npm** or **yarn** for package management
+
+### 🔧 Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Syed-Bilal-Haider-Engineer/react-counter-app.git
+   cd react-counter-app
+   
+2. **Install dependencies & Running the App**:
+ ```bash
+  npm install
+  npm run dev
